@@ -1,31 +1,18 @@
 package com.example.lantar.solveasttest;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.GestureDetector;
-import android.view.GestureDetector.SimpleOnGestureListener;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
-import android.view.animation.Animation;
-import android.view.animation.Animation.AnimationListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.io.File;
 
@@ -33,7 +20,6 @@ public class SlideShowActivity extends Activity {
 
     private ViewFlipper mViewFlipper;
     private static int interval = 4000;
-    private String path;
     private ImageView firstImage;
     private CountDownTimer timer;
     private static int numberCurrentPhoto = 0;
@@ -121,14 +107,12 @@ public class SlideShowActivity extends Activity {
     }
 
 
-
     protected void onActivityResult(int shange) {
         if (shange == 0) {
             return;
         }
 
         interval = OptionsDate.getInterval();
-        path = OptionsDate.getPath();
 
         if (OptionsDate.getPath() == null) {
             Toast.makeText(getApplicationContext(), SlideShowActivity.this.getString(R.string.fail_path), Toast.LENGTH_SHORT).show();

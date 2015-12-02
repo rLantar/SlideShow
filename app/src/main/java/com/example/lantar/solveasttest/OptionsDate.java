@@ -1,7 +1,5 @@
 package com.example.lantar.solveasttest;
 
-import android.content.SharedPreferences;
-
 import java.util.ArrayList;
 
 /**
