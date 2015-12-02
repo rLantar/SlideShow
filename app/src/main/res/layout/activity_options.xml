@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать папку"
+        android:id="@+id/chooseDirButton"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editInterval"
+        android:layout_gravity="center_horizontal"
+        android:hint="Указать интервал 1 - 60"
+        android:gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Запуск при включении"
+        android:id="@+id/checkBoxStart"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Запуск при зарядке"
+        android:id="@+id/checkBoxSharge"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:id="@+id/save"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

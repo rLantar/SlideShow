@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SolveastTest</string>
+    <string name="Autom">Autom</string>
+    <string name="fail_interval">Интервал должен быть в диапазоне 1 - 60</string>
+    <string name="fail_path">"Необходимо указать путь"</string>
+</resources>
